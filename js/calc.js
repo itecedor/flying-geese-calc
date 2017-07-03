@@ -13,8 +13,6 @@ $(document).ready(function() {
     var cut_length = .5 + block_length;
     var cut_width = block_length/2 + .5;
 
-    $(".btn-block-length-calculate").hide();
-
     var result_text = 'Size of rectangle to cut: ' + cut_length + ' x ' + cut_width;
     result_text = result_text + '<p>';
     result_text = result_text + 'Size of squares to cut: ' + cut_width + ' x ' + cut_width;
@@ -35,8 +33,6 @@ $(document).ready(function() {
 
     var cut_length = block_width * 2 + .5;
     var cut_width = block_width + .5;
-
-    $(".btn-block-width-calculate").hide();
 
     var result_text = 'Size of rectangle to cut: ' + cut_length + ' x ' + cut_width;
     result_text = result_text + '<p>';
