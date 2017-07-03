@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flying Geese Calculator</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="text-center">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Flying Geese Calculator</h1>
+        <p>If you've ever wanted to make flying geese blocks of various sizes but couldn't calculate the rectangle and square sizes, this calculator is for you!
+        <p>Enter the number you know and we'll do the math to tell you what to cut.
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Which measurement do you know?</h2>
+      <button class="btn btn-primary btn-block-length" type="button">The finished length I want to end up with</button>
+      <div id="block-length-form" style="display:none">
+        <div class="form-group">
+          <label for="block-length">Finished length</label>: <input type="number" name="block-length">
+        </div>
+        <button class="btn btn-default btn-block-length-calculate" type="button">Calculate</button>
+
+        <h3 id="result"> </h3>
+      </div>
+      <button class="btn btn-default btn-restart" type="button" style="display:none">Start over</button>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/calc.js"></script>
+  </body>
+</html>
