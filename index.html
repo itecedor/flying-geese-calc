@@ -23,22 +23,49 @@
     </div>
 
     <div class="container">
+      <h2>Tips:</h2>
+        <p>Enter the size, in inches (no " needed).
+        <br>This calculator assumes a 1/2" seam allowance.
+
       <h2>Which measurement do you know?</h2>
-      <button class="btn btn-primary btn-block-length" type="button">The finished length I want to end up with</button>
-      <div class="block-form" id="block-length-form" style="display:none">
-        <div class="form-group">
-          <label for="block-length">Finished length</label>: <input type="number" name="block-length">
+
+      <div id="finished">
+        <button class="btn btn-primary btn-block-length" type="button">The FINISHED length</button>
+        <div class="block-form" id="block-length-form" style="display:none">
+          <div class="form-group">
+            <label for="block-length">Finished length</label>: <input type="number" name="block-length">
+          </div>
+          <button class="btn btn-default btn-block-length-calculate" type="button">Calculate</button>
         </div>
-        <button class="btn btn-default btn-block-length-calculate" type="button">Calculate</button>
+
+        <button class="btn btn-primary btn-block-width" type="button">The FINISHED width</button>
+        <div class="block-form" id="block-width-form" style="display:none">
+          <div class="form-group">
+            <label for="block-width">Finished width</label>: <input type="number" name="block-width">
+          </div>
+          <button class="btn btn-default btn-block-width-calculate" type="button">Calculate</button>
+        </div>
       </div>
 
-      <button class="btn btn-primary btn-block-width" type="button">The finished width I want to end up with</button>
-      <div class="block-form" id="block-width-form" style="display:none">
-        <div class="form-group">
-          <label for="block-width">Finished width</label>: <input type="number" name="block-width">
+      <p>
+      <div id="cut">
+        <button class="btn btn-primary btn-cut-length" type="button">The CUT length</button>
+        <div class="block-form" id="cut-length-form" style="display:none">
+          <div class="form-group">
+            <label for="cut-length">Cut length</label>: <input type="number" name="cut-length">
+          </div>
+          <button class="btn btn-default btn-cut-length-calculate" type="button">Calculate</button>
         </div>
-        <button class="btn btn-default btn-block-width-calculate" type="button">Calculate</button>
+
+        <button class="btn btn-primary btn-cut-width" type="button">The CUT width</button>
+        <div class="block-form" id="cut-width-form" style="display:none">
+          <div class="form-group">
+            <label for="cut-width">Cut width</label>: <input type="number" name="cut-width">
+          </div>
+          <button class="btn btn-default btn-cut-width-calculate" type="button">Calculate</button>
+        </div>
       </div>
+
       <h3 id="result"> </h3>
       <button class="btn btn-default btn-restart" type="button" style="display:none">Start over</button>
     </div>
