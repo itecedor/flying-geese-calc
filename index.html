@@ -25,14 +25,21 @@
     <div class="container">
       <h2>Which measurement do you know?</h2>
       <button class="btn btn-primary btn-block-length" type="button">The finished length I want to end up with</button>
-      <div id="block-length-form" style="display:none">
+      <div class="block-form" id="block-length-form" style="display:none">
         <div class="form-group">
           <label for="block-length">Finished length</label>: <input type="number" name="block-length">
         </div>
         <button class="btn btn-default btn-block-length-calculate" type="button">Calculate</button>
-
-        <h3 id="result"> </h3>
       </div>
+
+      <button class="btn btn-primary btn-block-width" type="button">The finished width I want to end up with</button>
+      <div class="block-form" id="block-width-form" style="display:none">
+        <div class="form-group">
+          <label for="block-width">Finished width</label>: <input type="number" name="block-width">
+        </div>
+        <button class="btn btn-default btn-block-width-calculate" type="button">Calculate</button>
+      </div>
+      <h3 id="result"> </h3>
       <button class="btn btn-default btn-restart" type="button" style="display:none">Start over</button>
     </div>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>

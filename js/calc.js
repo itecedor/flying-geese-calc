@@ -3,7 +3,7 @@ $(document).ready(function() {
   // show the finished length calculator
   $(".btn-block-length").click(function() {
     $("#block-length-form").show();
-    $(".btn-block-length").hide();
+    $(".btn-primary").hide();
   });
 
   // calculate based on finished length
@@ -23,14 +23,36 @@ $(document).ready(function() {
     $(".btn-restart").show();
   });
 
+  // show the finished wdith calculator
+  $(".btn-block-width").click(function() {
+    $("#block-width-form").show();
+    $(".btn-primary").hide();
+  });
+
+  // calculate based on finished width
+  $(".btn-block-width-calculate").click(function() {
+    var block_width = parseInt($("input[name='block-width']").val());
+
+    var cut_length = block_width * 2 + .5;
+    var cut_width = block_width + .5;
+
+    $(".btn-block-width-calculate").hide();
+
+    var result_text = 'Size of rectangle to cut: ' + cut_length + ' x ' + cut_width;
+    result_text = result_text + '<p>';
+    result_text = result_text + 'Size of squares to cut: ' + cut_width + ' x ' + cut_width;
+    $("#result").append(result_text);
+
+    $(".btn-restart").show();
+  });
+
   // restart
   $(".btn-restart").click(function() {
-    $("input[name='block-length']").val("");
+    $("input").val("");
     $("#result").text("");
-    $(".btn-block-length-calculate").show();
+    $(".btn-primary").show();
     $(".btn-restart").hide();
-    $("#block-length-form").hide();
-    $(".btn-block-length").show();
+    $(".block-form").hide();
   });
 
 });
