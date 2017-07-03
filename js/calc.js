@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   // calculate based on finished length
   $(".btn-block-length-calculate").click(function() {
-    var block_length = parseInt($("input[name='block-length']").val());
+    var block_length = parseFloat($("input[name='block-length']").val());
 
     var cut_length = .5 + block_length;
     var cut_width = block_length/2 + .5;
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   // calculate based on finished width
   $(".btn-block-width-calculate").click(function() {
-    var block_width = parseInt($("input[name='block-width']").val());
+    var block_width = parseFloat($("input[name='block-width']").val());
 
     var cut_length = block_width * 2 + .5;
     var cut_width = block_width + .5;
